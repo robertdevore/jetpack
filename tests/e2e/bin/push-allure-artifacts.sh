@@ -2,8 +2,8 @@
 
 set -ex
 
-ORG="brbrr"
-REPO="test-dashboard-pages"
+ORG="automattic"
+REPO="jetpack-test-dashboard-pages"
 ROOT_DIR=$(pwd)
 REPO_DIR=$ROOT_DIR/$REPO
 RESULTS_DIR="allure-results"
