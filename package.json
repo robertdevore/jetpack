@@ -27,7 +27,7 @@
 		"build": "yarn install-if-deps-outdated && yarn clean && yarn build-client && yarn build-php && yarn build-extensions && yarn build-search && yarn build-packages",
 		"build-client": "gulp",
 		"build-packages": "webpack --config ./webpack.config.packages.js",
-		"build-extensions": "webpack --config ./webpack.config.extensions.js",
+		"build-extensions": "webpack --config ./webpack.config.extensions.js && yarn validate-es5 -- ./_inc/blocks/",
 		"build-search": "yarn build-search:scripts && yarn build-search:styles",
 		"build-search:scripts": "webpack --config ./webpack.config.search.js",
 		"build-search:styles": "gulp sass:instant-search",
@@ -78,6 +78,7 @@
 		"test-dangerci-and-adminpage-and-extensions": "yarn danger ci && yarn test-adminpage && yarn test-extensions",
 		"test-search": "jest modules/search",
 		"reformat-files": "./node_modules/.bin/prettier --ignore-path .eslintignore --write \"**/*.{js,jsx,json}\"",
+		"validate-es5": "npx eslint --parser-options=ecmaVersion:5 --no-eslintrc --no-ignore",
 		"version-packages": "bash ./bin/version-packages.sh"
 	},
 	"husky": {
