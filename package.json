@@ -37,7 +37,7 @@
 		"build-production-extensions": "NODE_ENV=production BABEL_ENV=production yarn build-extensions",
 		"build-production-packages": "NODE_ENV=production BABEL_ENV=production yarn build-packages && yarn validate-es5 -- ./packages/lazy-images/",
 		"build-production-search": "NODE_ENV=production BABEL_ENV=production yarn build-search && yarn validate-es5 -- ./_inc/build/instant-search/",
-		"build-production": "yarn distclean && yarn install --production=false && yarn build-production-client && yarn build-production-php && yarn build-production-extensions && NODE_ENV=production yarn build-search && yarn build-production-packages",
+		"build-production": "yarn distclean && yarn install --production=false && yarn build-production-client && yarn build-production-php && yarn build-production-extensions && yarn build-production-search && yarn build-production-packages",
 		"docker:compose": "yarn docker:env && yarn docker:compose-volumes && yarn docker:compose-extras && docker-compose -f docker/docker-compose.yml -f docker/compose-volumes.built.yml -f docker/compose-extras.yml",
 		"docker:up": "yarn docker:compose up",
 		"docker:ngrok": "yarn docker:compose -f docker/docker-compose-ngrok.yml",
