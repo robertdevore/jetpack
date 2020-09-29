@@ -27,6 +27,7 @@
 		"revue",
 		"send-a-message",
 		"send-a-message/whatsapp-button",
+		"seo",
 		"sharing",
 		"shortlinks",
 		"simple-payments",
@@ -38,7 +39,7 @@
 		"wordads"
 	],
 	"beta": [ "amazon", "story" ],
-	"experimental": [ "seo" ],
+	"experimental": [],
 	"no-post-editor": [
 		"business-hours",
 		"button",
