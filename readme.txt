@@ -258,7 +258,7 @@ Our Cookie and Consent Banner can help you comply with GDPR. The European Unionâ
 
 **Improved compatibility**
 
-*
+* OpenTable Block: ensure full compatibility with the AMP plugin.
 
 **Bug fixes**
 
